@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carbon Footprint Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Carbon Footprint Calculator</h1>
+    <p>Calculate the carbon footprint of the energy sector for baseline and suggested scenarios.</p>
+
+    <!-- Baseline Scenario Inputs -->
+    <div class="input-section">
+      <h2>Baseline Scenario</h2>
+      <label for="baseline-coal">Coal (%):</label>
+      <input type="number" id="baseline-coal" placeholder="e.g., 50">
+      
+      <label for="baseline-gas">Gas (%):</label>
+      <input type="number" id="baseline-gas" placeholder="e.g., 30">
+      
+      <label for="baseline-renewables">Renewables (%):</label>
+      <input type="number" id="baseline-renewables" placeholder="e.g., 20">
+    </div>
+
+    <!-- Suggested Scenario Inputs -->
+    <div class="input-section">
+      <h2>Suggested Scenario</h2>
+      <label for="suggested-coal">Coal (%):</label>
+      <input type="number" id="suggested-coal" placeholder="e.g., 20">
+      
+      <label for="suggested-gas">Gas (%):</label>
+      <input type="number" id="suggested-gas" placeholder="e.g., 30">
+      
+      <label for="suggested-renewables">Renewables (%):</label>
+      <input type="number" id="suggested-renewables" placeholder="e.g., 50">
+    </div>
+
+    <!-- Buttons and Output -->
+    <button onclick="calculateFootprint()">Calculate</button>
+    <div id="result" class="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
